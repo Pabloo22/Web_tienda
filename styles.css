@@ -1,0 +1,326 @@
+﻿*´ {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("Imagenes/background.jpg");
+    font-family: 'Yeon Sung', cursive;
+}
+
+
+header, .main, footer {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+header .logo{
+    background: #FFD763; 
+    background: -moz-radial-gradient(center, #FFD763 0%, #C5934B 50%, #24251C 100%);
+    background: -webkit-radial-gradient(center, #FFD763 0%, #C5934B 50%, #24251C 100%);
+    background: radial-gradient(ellipse at center, #FFD763 0%, #C5934B 50%, #24251C 100%);
+    -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+    box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+    font-size: 30px;
+    width: 40%;
+    max-width: 1200px;
+    margin: 20px auto;
+    color: #FFFFFF;
+    text-shadow: 4px 3px 0 #7A7A7A;
+    text-align: center;
+    position: relative; /*Necesario para poder moverlo con bottom*/
+    bottom: -22px;
+    border-radius: 200%;
+}
+
+
+header nav {
+    background: #FFD763; /*El color visto anteriormente*/
+    background: -moz-radial-gradient(center, #FFD763 0%, #C5934B 50%, #24251C 100%);
+    background: -webkit-radial-gradient(center, #FFD763 0%, #C5934B 50%, #24251C 100%);
+    background: radial-gradient(ellipse at center, #FFD763 0%, #C5934B 50%, #24251C 100%);
+    overflow: hidden;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0px auto;
+    border-radius: 5px;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul .li1 {
+    float: left;
+}
+
+header nav ul li a {
+    padding: 10px 20px;
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    background: rgba(255, 255, 255, 0.486);
+    transition: 1s;
+}
+
+.submenu{
+    display: none;
+    position: absolute;
+    min-width: 140px;
+    background: #FFD763;
+    background: -moz-radial-gradient(center, #FFD763 0%, #C5934B 50%, #24251C 100%);
+    background: -webkit-radial-gradient(center, #FFD763 0%, #C5934B 50%, #24251C 100%);
+    background: radial-gradient(ellipse at center, #FFD763 0%, #C5934B 50%, #24251C 100%);
+    padding: 0px
+        
+}
+
+header nav ul li:hover .submenu{
+        
+    display: block;
+}
+
+header .imagen img{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0px auto;
+    background-color: rgb(146, 58, 58);
+    height: auto;
+    border-radius: 5px;
+}
+
+aside {
+    width: 30%;
+    background: #FFFBB9;
+    background: -moz-linear-gradient(top, #FFFBB9 0%, #DFDD7C 50%, #B8B766 100%);
+    background: -webkit-linear-gradient(top, #FFFBB9 0%, #DFDD7C 50%, #B8B766 100%);
+    background: linear-gradient(to bottom, #FFFBB9 0%, #DFDD7C 50%, #B8B766 100%);
+    float: right;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 0px 0px 5px #A0A0A0, inset 0px 10px 27px -8px #141414, inset 0px -10px 27px -8px #A31925, 5px 5px 15px 5px rgba(0,0,0,0); 
+    box-shadow: 0px 0px 0px 5px #A0A0A0, inset 0px 10px 27px -8px #141414, inset 0px -10px 27px -8px #A31925, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+
+aside .foto_perfil img{
+
+    width: 50%;
+    position: relative;
+    left: 25%; /*(100-50=50 --> 50/2=25%)*/
+}
+
+aside .divider{
+
+    width: 100%;
+}
+
+aside h2{
+
+    font-style: italic;
+}
+
+aside .video{
+
+    width: 90%;
+    position: relative;
+    margin: 5px;
+    padding: 5px;
+    left: 2.5%; /*100-90-2(5/2)=5 --> 5/2=2.5*/
+}
+
+aside .maps{
+
+    width: 90%;
+    position: relative;
+    left: 5%; /*100-90=10 --> 10/2=5*/
+}
+aside .redes div{
+    filter: grayscale(100%);
+    width: 100%;
+    margin: auto;
+}
+
+aside .redes a img{
+
+    width: 20%; /*100/5=20*/
+    float: left;
+    
+}
+
+aside .redes div:hover{
+
+    filter: grayscale(0%);
+}
+
+
+.main .articles {
+    width: 68.5%;
+    margin-right: 1.5%;
+    float: left;
+}
+
+.main .articles .juegos {
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+    box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+
+.main .articles .juegos {
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    border-radius: 10px;
+    -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+    box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+
+.main .articles article>div {
+    width: 100%;
+    display: inline-block;
+    position: relative;
+}
+
+.main .articles article .img_juego {
+    float: right;
+    
+}
+
+.main .articles .img_juego img {
+    width: 200px;
+    height: 200px;
+}
+
+.img_juego:hover img{
+    -webkit-transform:scale(1.3);
+    transform:scale(1.3);
+
+}
+
+.main .articles .noticias_h1{
+
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background: #908C68;
+    background: -moz-linear-gradient(left, #908C68 0%, #FFFD8E 50%, #908C68 100%);
+    background: -webkit-linear-gradient(left, #908C68 0%, #FFFD8E 50%, #908C68 100%);
+    background: linear-gradient(to right, #908C68 0%, #FFFD8E 50%, #908C68 100%);
+}
+
+.noticias_h1 h1{ /*Separador entre la tienda y noticias*/
+    
+    background-origin: content-box;
+    text-shadow: 2px 2px 0px #FFFFFF, 5px 4px 0px rgba(0,0,0,0.15);
+    font-size: 50px;
+    text-align: center;
+}
+
+.noticias .contenedor{
+    margin-bottom: 10px;
+}
+
+.noticias div{
+    width: 30.5%; /*33-1.5(margin)-1(padding)*/
+    float: left;
+    display: inline-block;
+    
+}
+
+.noticias #Baloncesto{
+    
+    background: #FFFFFF;
+    background: -moz-radial-gradient(center, #FFFFFF 0%, #959595 100%);
+    background: -webkit-radial-gradient(center, #FFFFFF 0%, #959595 100%);
+    background: radial-gradient(ellipse at center, #FFFFFF 0%, #959595 100%);
+    -webkit-box-shadow: #FFF 0 -1px 4px, #ff0 0 -2px 10px, #ff8000 0 -10px 20px, red 0 -18px 40px, 5px 5px 15px 5px rgba(0,0,0,0); 
+    box-shadow: #FFF 0 -1px 4px, #ff0 0 -2px 10px, #ff8000 0 -10px 20px, red 0 -18px 40px, 5px 5px 15px 5px rgba(0,0,0,0);
+    margin-right: 1.5%;
+    padding: 1%;
+    border-radius: 5px;
+
+}
+
+.noticias a{
+
+    text-decoration: none;
+    color: black;
+}
+
+.noticias a:hover{
+
+    color: #FF7E00;
+}
+
+.img_noticias{
+
+    position: relative;
+    left: 5%;
+
+}
+
+.img_noticias img{
+
+    width: 300%;
+    height: 300%;
+
+}
+
+.img_noticias:hover img{
+
+    box-shadow: 0px 0px 15px 15px #ec731e;
+    -webkit-box-shadow: 0px 0px 15px 15px #ec731e;
+
+}
+
+.noticias #Ajedrez{
+    margin-right: 1%;
+    background: #FFFFFF;
+    background: -moz-radial-gradient(center, #FFFFFF 0%, #959595 100%);
+    background: -webkit-radial-gradient(center, #FFFFFF 0%, #959595 100%);
+    background: radial-gradient(ellipse at center, #FFFFFF 0%, #959595 100%);
+    -webkit-box-shadow: #FFF 0 -1px 4px, #ff0 0 -2px 10px, #ff8000 0 -10px 20px, red 0 -18px 40px, 5px 5px 15px 5px rgba(0,0,0,0); 
+    box-shadow: #FFF 0 -1px 4px, #ff0 0 -2px 10px, #ff8000 0 -10px 20px, red 0 -18px 40px, 5px 5px 15px 5px rgba(0,0,0,0);
+    padding: 1%;
+    border-radius: 5px;
+}
+
+.noticias #Tecnologia{
+    
+    background: #FFFFFF;
+    background: -moz-radial-gradient(center, #FFFFFF 0%, #959595 100%);
+    background: -webkit-radial-gradient(center, #FFFFFF 0%, #959595 100%);
+    background: radial-gradient(ellipse at center, #FFFFFF 0%, #959595 100%);
+    -webkit-box-shadow: #FFF 0 -1px 4px, #ff0 0 -2px 10px, #ff8000 0 -10px 20px, red 0 -18px 40px, 5px 5px 15px 5px rgba(0,0,0,0); 
+    box-shadow: #FFF 0 -1px 4px, #ff0 0 -2px 10px, #ff8000 0 -10px 20px, red 0 -18px 40px, 5px 5px 15px 5px rgba(0,0,0,0);
+    padding: 1%;
+    border-radius: 5px;
+}
+
+footer {
+    background: #FFD763;
+    background: -moz-linear-gradient(top, #FFD763 0%, #C5934B 50%, #676950 100%);
+    background: -webkit-linear-gradient(top, #FFD763 0%, #C5934B 50%, #676950 100%);
+    background: linear-gradient(to bottom, #FFD763 0%, #C5934B 50%, #676950 100%);
+    clear: both;
+    
+    border-radius: 5px;
+    
+}
+
+footer p{
+
+    color: #202c2d;
+    text-shadow: 0 1px #808d93, -1px 0 #cdd2d5, -1px 2px #808d93, -2px 1px #cdd2d5, -2px 3px #808d93;
+    text-align: center;
+    font-size: 30px;
+    padding: 5px 0px;
+}
+
